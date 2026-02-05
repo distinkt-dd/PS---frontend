@@ -5,9 +5,8 @@
 	"compilerOptions": {
 		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 		"baseUrl": ".",
-
 		"paths": {
-			"@": ["./src/*"],
+			"@/*": ["./src/*"],
 			"@pages/*": ["./src/pages/*"],
 			"@app/*": ["./src/app/*"],
 			"@stores/*": ["./src/stores/*"],
