@@ -1,0 +1,28 @@
+.header {
+	position: relative;
+	border-bottom: 1px var(--background-elements) solid;
+}
+
+.header::after {
+	content: '';
+	height: 100%;
+	z-index: -1;
+	background-color: var(--background-elements);
+	position: absolute;
+	top: 0;
+	max-width: 100%;
+	width: 100%;
+	opacity: 0.3;
+}
+
+.active {
+	color: var(--color-white);
+}
+
+.link_hover {
+	transition: color 0.3s ease;
+}
+
+.link_hover:hover {
+	color: var(--color-white);
+}

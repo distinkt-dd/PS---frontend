@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+@import './styles/fonts.css';
+:root {
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-accent: #ffa500;
+	--color-light-highlighter: #302e53;
+	--color-dark-hightlighter: #1b1a2a;
+	--color-very-dark: #080715;
+	--color-red: #ff3535;
+	--color-gray: #a0a0a0;
+	--color-default-elipse-fiol: #473cfb;
+
+	--color-font-main: var(--color-gray);
+	--color-font-span: var(--color-accent);
+	--color-border-accent: var(--color-accent);
+	--color-border-main: var(--color-light-highlighter);
+	--color-heart-active: var(--color-red);
+	--color-heart-notactive: var(--color-white);
+	--color-placeholder: var(--color-gray);
+	--color-outline: var(--color-white);
+	--color-title-main: var(--color-white);
+	--color-text-white: var(--color-white);
+
+	--background-body: var(--color-very-dark);
+	--background-elements: var(--color-dark-hightlighter);
+	--background-button-active: var(--color-accent);
+	--background-wrapper: var(--color-black);
+	--background-white: var(--color-white);
+
+	--font-family-base: 'Manrope', sans-serif;
+	--transition-duration: 0.3s;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+html.is-lock {
+	overflow: hidden;
+}
+
+.d-n {
+	display: none !important;
+}
+
+body {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--color-font-main);
+	background-color: var(--background-body);
+	font-family: var(--font-family-base);
+}
+
+main {
+	flex-grow: 1;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	color: var(--color-title-main);
+	line-height: 1.2;
+}
+
+h1,
+.h1 {
+	font-size: clamp(48px, 42.18px + 1.82vw, 64px);
+	font-weight: 700;
+}
+
+h2,
+.h2 {
+	font-size: clamp(36px, 26.18px + 1.82vw, 48px);
+	font-weight: 700;
+}
+
+h3,
+.h3 {
+	font-size: clamp(24px, 18.18px + 1.82vw, 36px);
+	font-weight: 700;
+}
+
+h4,
+.h4 {
+	font-size: clamp(20px, 16.18px + 1.82vw, 24px);
+	font-weight: 700;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	color: inherit;
+
+	&[class] {
+		text-decoration: none;
+	}
+}
+
+p {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.2;
+}
